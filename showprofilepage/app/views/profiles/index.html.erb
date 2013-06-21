@@ -1,0 +1,31 @@
+
+<h1>Profile Info</h1>
+<h2>
+<% require "rubygems" %>
+<% require "json" %>
+<% require "open-uri" %>
+<% string = open("http://graph.facebook.com/jainkush/").read  %>
+<% parsed = JSON.parse(string) %>
+</h2>
+<table>
+  <tr>
+    <th>Name</th>
+    <td><%= parsed["name"] %></td>
+  </tr>
+  <tr>
+    <th>Gender</th>
+    <td><%= parsed["gender"] %></td>
+  </tr>
+  <tr>
+    <th>Speaks</th>
+    <td><%= parsed["locale"] %></td>
+  </tr>
+  <tr>
+    <th>Facebook Username</th>
+    <td><a href='<%=  parsed["link"]  %>  '><%=   parsed["username"]  %></a></td>
+  </tr>
+  
+</table>
+
+<br />
+

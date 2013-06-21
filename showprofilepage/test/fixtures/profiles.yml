@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  gender: MyString
+  speaks: MyString
+  fbprofilehandle: MyString
+
+two:
+  name: MyString
+  gender: MyString
+  speaks: MyString
+  fbprofilehandle: MyString
