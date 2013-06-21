@@ -6,8 +6,9 @@
 <% require "open-uri" %>
 <% string = open("http://graph.facebook.com/jainkush/").read  %>
 <% parsed = JSON.parse(string) %>
+
 </h2>
-<table>
+<table class="table table-striped">
   <tr>
     <th>Name</th>
     <td><%= parsed["name"] %></td>
